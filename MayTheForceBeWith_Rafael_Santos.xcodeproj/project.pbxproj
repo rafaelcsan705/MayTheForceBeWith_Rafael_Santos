@@ -3,10 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DC16D2DC4393D02E29775EB /* Pods_MayTheForceBeWith_Rafael_SantosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3365733AC0576EE65BDBA2BC /* Pods_MayTheForceBeWith_Rafael_SantosTests.framework */; };
+		4CBA88AC2F5A937D3FFE7943 /* Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC04F1D1C910E01062E4294E /* Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests.framework */; };
+		7159BFCC2397C88900AE7700 /* GetDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159BFCB2397C88900AE7700 /* GetDataService.swift */; };
+		7159BFCE2397C8A600AE7700 /* StarWarsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159BFCD2397C8A600AE7700 /* StarWarsProtocol.swift */; };
+		7190C19C2397F20B00E09ED8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190C19B2397F20B00E09ED8 /* Person.swift */; };
+		7190C19F2398092500E09ED8 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190C19E2398092500E09ED8 /* InfoCell.swift */; };
+		71E8A8422399243800251B76 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E8A8402399243800251B76 /* Starjedi.ttf */; };
+		71E8A8442399244E00251B76 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E8A8432399244E00251B76 /* Starjhol.ttf */; };
+		71E8A8462399245A00251B76 /* STJEDISE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 71E8A8452399245A00251B76 /* STJEDISE.TTF */; };
+		71E8A84A2399246600251B76 /* Strjmono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E8A8472399246600251B76 /* Strjmono.ttf */; };
+		71E8A84B2399246600251B76 /* Stjldbl2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E8A8482399246600251B76 /* Stjldbl2.ttf */; };
+		71E8A84C2399246600251B76 /* Stjldbl1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E8A8492399246600251B76 /* Stjldbl1.ttf */; };
+		71E8A84E2399594F00251B76 /* SpecificPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8A84D2399594F00251B76 /* SpecificPersonViewController.swift */; };
 		71EC15D72396C5BB002A5E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC15D62396C5BB002A5E32 /* AppDelegate.swift */; };
 		71EC15D92396C5BB002A5E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC15D82396C5BB002A5E32 /* SceneDelegate.swift */; };
 		71EC15DB2396C5BB002A5E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC15DA2396C5BB002A5E32 /* ViewController.swift */; };
@@ -15,6 +28,7 @@
 		71EC15E32396C5C0002A5E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71EC15E12396C5C0002A5E32 /* LaunchScreen.storyboard */; };
 		71EC15EE2396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC15ED2396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosTests.swift */; };
 		71EC15F92396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC15F82396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosUITests.swift */; };
+		F8B12E9CBC0B83C1A1DBC4CE /* Pods_MayTheForceBeWith_Rafael_Santos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4485D487DEDDB5B40F05F0B1 /* Pods_MayTheForceBeWith_Rafael_Santos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DFD2C6B1984CB779B24AAF /* Pods-MayTheForceBeWith_Rafael_Santos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_Santos.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos/Pods-MayTheForceBeWith_Rafael_Santos.release.xcconfig"; sourceTree = "<group>"; };
+		3365733AC0576EE65BDBA2BC /* Pods_MayTheForceBeWith_Rafael_SantosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_Rafael_SantosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4485D487DEDDB5B40F05F0B1 /* Pods_MayTheForceBeWith_Rafael_Santos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_Rafael_Santos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5580E3CEDCDD6ACE0C97A846 /* Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7159BFCB2397C88900AE7700 /* GetDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataService.swift; sourceTree = "<group>"; };
+		7159BFCD2397C8A600AE7700 /* StarWarsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsProtocol.swift; sourceTree = "<group>"; };
+		7190C19B2397F20B00E09ED8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7190C19E2398092500E09ED8 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		71E8A8402399243800251B76 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		71E8A8432399244E00251B76 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		71E8A8452399245A00251B76 /* STJEDISE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STJEDISE.TTF; sourceTree = "<group>"; };
+		71E8A8472399246600251B76 /* Strjmono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Strjmono.ttf; sourceTree = "<group>"; };
+		71E8A8482399246600251B76 /* Stjldbl2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl2.ttf; sourceTree = "<group>"; };
+		71E8A8492399246600251B76 /* Stjldbl1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl1.ttf; sourceTree = "<group>"; };
+		71E8A84D2399594F00251B76 /* SpecificPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificPersonViewController.swift; sourceTree = "<group>"; };
 		71EC15D32396C5BB002A5E32 /* MayTheForceBeWith_Rafael_Santos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTheForceBeWith_Rafael_Santos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EC15D62396C5BB002A5E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71EC15D82396C5BB002A5E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +78,13 @@
 		71EC15F42396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTheForceBeWith_Rafael_SantosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EC15F82396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTheForceBeWith_Rafael_SantosUITests.swift; sourceTree = "<group>"; };
 		71EC15FA2396C5C0002A5E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		738FEC613F017D787299C684 /* Pods-MayTheForceBeWith_Rafael_SantosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_SantosTests.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_SantosTests/Pods-MayTheForceBeWith_Rafael_SantosTests.release.xcconfig"; sourceTree = "<group>"; };
+		9403DDC352A88E844736DAB9 /* Pods-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A10B740E2ACAAC5E8DBDA6F4 /* Pods-MayTheForceBeWith_Rafael_SantosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_SantosTests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_SantosTests/Pods-MayTheForceBeWith_Rafael_SantosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5349A19F7E9B0BCFCB7A23E /* Pods-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D05ABE34F1BAC8CB2984DDA2 /* Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEEF27EEBCDC02A3534891F4 /* Pods-MayTheForceBeWith_Rafael_Santos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTheForceBeWith_Rafael_Santos.debug.xcconfig"; path = "Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos/Pods-MayTheForceBeWith_Rafael_Santos.debug.xcconfig"; sourceTree = "<group>"; };
+		FC04F1D1C910E01062E4294E /* Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B12E9CBC0B83C1A1DBC4CE /* Pods_MayTheForceBeWith_Rafael_Santos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC16D2DC4393D02E29775EB /* Pods_MayTheForceBeWith_Rafael_SantosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +108,98 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBA88AC2F5A937D3FFE7943 /* Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350DF58DF95E313D809F4B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4485D487DEDDB5B40F05F0B1 /* Pods_MayTheForceBeWith_Rafael_Santos.framework */,
+				3365733AC0576EE65BDBA2BC /* Pods_MayTheForceBeWith_Rafael_SantosTests.framework */,
+				FC04F1D1C910E01062E4294E /* Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7159BFC62397C82D00AE7700 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				71E8A83E2399241000251B76 /* fonts */,
+				71EC15D62396C5BB002A5E32 /* AppDelegate.swift */,
+				71EC15D82396C5BB002A5E32 /* SceneDelegate.swift */,
+				71EC15DF2396C5C0002A5E32 /* Assets.xcassets */,
+				71EC15E42396C5C0002A5E32 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7159BFC72397C83F00AE7700 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71EC15DC2396C5BB002A5E32 /* Main.storyboard */,
+				71EC15E12396C5C0002A5E32 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7159BFC82397C84F00AE7700 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71EC15DA2396C5BB002A5E32 /* ViewController.swift */,
+				71E8A84D2399594F00251B76 /* SpecificPersonViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7159BFC92397C86500AE7700 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7159BFCD2397C8A600AE7700 /* StarWarsProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7159BFCA2397C86D00AE7700 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7159BFCB2397C88900AE7700 /* GetDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7190C19A2397F1B500E09ED8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7190C19B2397F20B00E09ED8 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7190C19D239808EA00E09ED8 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7190C19E2398092500E09ED8 /* InfoCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		71E8A83E2399241000251B76 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71E8A8402399243800251B76 /* Starjedi.ttf */,
+				71E8A8432399244E00251B76 /* Starjhol.ttf */,
+				71E8A8452399245A00251B76 /* STJEDISE.TTF */,
+				71E8A8492399246600251B76 /* Stjldbl1.ttf */,
+				71E8A8482399246600251B76 /* Stjldbl2.ttf */,
+				71E8A8472399246600251B76 /* Strjmono.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		71EC15CA2396C5BB002A5E32 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +207,8 @@
 				71EC15EC2396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosTests */,
 				71EC15F72396C5C0002A5E32 /* MayTheForceBeWith_Rafael_SantosUITests */,
 				71EC15D42396C5BB002A5E32 /* Products */,
+				7FD3467E602345E47A0C3242 /* Pods */,
+				350DF58DF95E313D809F4B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +225,13 @@
 		71EC15D52396C5BB002A5E32 /* MayTheForceBeWith_Rafael_Santos */ = {
 			isa = PBXGroup;
 			children = (
-				71EC15D62396C5BB002A5E32 /* AppDelegate.swift */,
-				71EC15D82396C5BB002A5E32 /* SceneDelegate.swift */,
-				71EC15DA2396C5BB002A5E32 /* ViewController.swift */,
-				71EC15DC2396C5BB002A5E32 /* Main.storyboard */,
-				71EC15DF2396C5C0002A5E32 /* Assets.xcassets */,
-				71EC15E12396C5C0002A5E32 /* LaunchScreen.storyboard */,
-				71EC15E42396C5C0002A5E32 /* Info.plist */,
+				7190C19D239808EA00E09ED8 /* TableViewCell */,
+				7190C19A2397F1B500E09ED8 /* Model */,
+				7159BFC92397C86500AE7700 /* Protocol */,
+				7159BFCA2397C86D00AE7700 /* Service */,
+				7159BFC82397C84F00AE7700 /* Controllers */,
+				7159BFC72397C83F00AE7700 /* Views */,
+				7159BFC62397C82D00AE7700 /* Support */,
 			);
 			path = MayTheForceBeWith_Rafael_Santos;
 			sourceTree = "<group>";
@@ -128,6 +254,21 @@
 			path = MayTheForceBeWith_Rafael_SantosUITests;
 			sourceTree = "<group>";
 		};
+		7FD3467E602345E47A0C3242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF27EEBCDC02A3534891F4 /* Pods-MayTheForceBeWith_Rafael_Santos.debug.xcconfig */,
+				04DFD2C6B1984CB779B24AAF /* Pods-MayTheForceBeWith_Rafael_Santos.release.xcconfig */,
+				D05ABE34F1BAC8CB2984DDA2 /* Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig */,
+				5580E3CEDCDD6ACE0C97A846 /* Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig */,
+				A10B740E2ACAAC5E8DBDA6F4 /* Pods-MayTheForceBeWith_Rafael_SantosTests.debug.xcconfig */,
+				738FEC613F017D787299C684 /* Pods-MayTheForceBeWith_Rafael_SantosTests.release.xcconfig */,
+				9403DDC352A88E844736DAB9 /* Pods-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig */,
+				A5349A19F7E9B0BCFCB7A23E /* Pods-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71EC15FD2396C5C0002A5E32 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_Rafael_Santos" */;
 			buildPhases = (
+				FD360CCD7DE735C536336AA1 /* [CP] Check Pods Manifest.lock */,
 				71EC15CF2396C5BB002A5E32 /* Sources */,
 				71EC15D02396C5BB002A5E32 /* Frameworks */,
 				71EC15D12396C5BB002A5E32 /* Resources */,
+				DB14493F1DDF6E55F6BA1541 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71EC16002396C5C0002A5E32 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_Rafael_SantosTests" */;
 			buildPhases = (
+				E9408A7549C18F94DA0668D0 /* [CP] Check Pods Manifest.lock */,
 				71EC15E52396C5C0002A5E32 /* Sources */,
 				71EC15E62396C5C0002A5E32 /* Frameworks */,
 				71EC15E72396C5C0002A5E32 /* Resources */,
@@ -170,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71EC16032396C5C0002A5E32 /* Build configuration list for PBXNativeTarget "MayTheForceBeWith_Rafael_SantosUITests" */;
 			buildPhases = (
+				D3EDB33C09DCFFCD5357B24F /* [CP] Check Pods Manifest.lock */,
 				71EC15F02396C5C0002A5E32 /* Sources */,
 				71EC15F12396C5C0002A5E32 /* Frameworks */,
 				71EC15F22396C5C0002A5E32 /* Resources */,
+				0A6F4337EE47C54A5FE4B88A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +378,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E8A84C2399246600251B76 /* Stjldbl1.ttf in Resources */,
 				71EC15E32396C5C0002A5E32 /* LaunchScreen.storyboard in Resources */,
 				71EC15E02396C5C0002A5E32 /* Assets.xcassets in Resources */,
 				71EC15DE2396C5BB002A5E32 /* Main.storyboard in Resources */,
+				71E8A8462399245A00251B76 /* STJEDISE.TTF in Resources */,
+				71E8A84A2399246600251B76 /* Strjmono.ttf in Resources */,
+				71E8A8422399243800251B76 /* Starjedi.ttf in Resources */,
+				71E8A8442399244E00251B76 /* Starjhol.ttf in Resources */,
+				71E8A84B2399246600251B76 /* Stjldbl2.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +406,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A6F4337EE47C54A5FE4B88A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EDB33C09DCFFCD5357B24F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB14493F1DDF6E55F6BA1541 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos/Pods-MayTheForceBeWith_Rafael_Santos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos/Pods-MayTheForceBeWith_Rafael_Santos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MayTheForceBeWith_Rafael_Santos/Pods-MayTheForceBeWith_Rafael_Santos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9408A7549C18F94DA0668D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTheForceBeWith_Rafael_SantosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD360CCD7DE735C536336AA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTheForceBeWith_Rafael_Santos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71EC15CF2396C5BB002A5E32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7190C19C2397F20B00E09ED8 /* Person.swift in Sources */,
+				7159BFCE2397C8A600AE7700 /* StarWarsProtocol.swift in Sources */,
 				71EC15DB2396C5BB002A5E32 /* ViewController.swift in Sources */,
 				71EC15D72396C5BB002A5E32 /* AppDelegate.swift in Sources */,
+				7159BFCC2397C88900AE7700 /* GetDataService.swift in Sources */,
+				71E8A84E2399594F00251B76 /* SpecificPersonViewController.swift in Sources */,
 				71EC15D92396C5BB002A5E32 /* SceneDelegate.swift in Sources */,
+				7190C19F2398092500E09ED8 /* InfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,15 +692,14 @@
 		};
 		71EC15FE2396C5C0002A5E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEF27EEBCDC02A3534891F4 /* Pods-MayTheForceBeWith_Rafael_Santos.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JSPBLZJX6;
-				INFOPLIST_FILE = MayTheForceBeWith_Rafael_Santos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "$(SRCROOT)/MayTheForceBeWith_Rafael_Santos/Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelcsantos.MayTheForceBeWith-Rafael-Santos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -450,15 +709,14 @@
 		};
 		71EC15FF2396C5C0002A5E32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04DFD2C6B1984CB779B24AAF /* Pods-MayTheForceBeWith_Rafael_Santos.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JSPBLZJX6;
-				INFOPLIST_FILE = MayTheForceBeWith_Rafael_Santos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "$(SRCROOT)/MayTheForceBeWith_Rafael_Santos/Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelcsantos.MayTheForceBeWith-Rafael-Santos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -468,6 +726,7 @@
 		};
 		71EC16012396C5C0002A5E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10B740E2ACAAC5E8DBDA6F4 /* Pods-MayTheForceBeWith_Rafael_SantosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +749,7 @@
 		};
 		71EC16022396C5C0002A5E32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738FEC613F017D787299C684 /* Pods-MayTheForceBeWith_Rafael_SantosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +772,7 @@
 		};
 		71EC16042396C5C0002A5E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05ABE34F1BAC8CB2984DDA2 /* Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +793,7 @@
 		};
 		71EC16052396C5C0002A5E32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5580E3CEDCDD6ACE0C97A846 /* Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

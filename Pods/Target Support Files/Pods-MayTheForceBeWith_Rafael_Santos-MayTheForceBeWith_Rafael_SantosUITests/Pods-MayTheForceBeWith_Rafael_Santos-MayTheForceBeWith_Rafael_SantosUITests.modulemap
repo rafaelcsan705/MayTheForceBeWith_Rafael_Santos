@@ -1,0 +1,6 @@
+framework module Pods_MayTheForceBeWith_Rafael_Santos_MayTheForceBeWith_Rafael_SantosUITests {
+  umbrella header "Pods-MayTheForceBeWith_Rafael_Santos-MayTheForceBeWith_Rafael_SantosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
