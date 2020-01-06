@@ -25,7 +25,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         dataModel.delegate = self
-
         dataModel.getData(type: "people")
     }
 
@@ -86,6 +85,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 destVC.name = self.personsArray[positionOfArray].name
                 destVC.heigh = self.personsArray[positionOfArray].height
                 destVC.mass = self.personsArray[positionOfArray].mass
+                destVC.hair = self.personsArray[positionOfArray].hair_color
                 destVC.gender = self.personsArray[positionOfArray].gender
                 destVC.skin = self.personsArray[positionOfArray].skin_color
                 destVC.eye = self.personsArray[positionOfArray].eye_color
