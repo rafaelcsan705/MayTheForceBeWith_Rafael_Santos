@@ -15,9 +15,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
 
+    @IBOutlet weak var footerButtonView: UIView!
     let dataModel = GetDataService()
     var personsArray : [Person] = []
     var specificPerson : [String] = []
+    var nextCall = "https://swapi.co/api/people/?format=json&page=1"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         dataModel.delegate = self
-        dataModel.getData(type: "people")
+        dataModel.getData(url: nextCall)
     }
 
     // MARK: - Atribute Person
@@ -48,15 +50,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+        // MARK: - Button Action
+    @IBAction func showMore(_ sender: Any) {
+        dataModel.getData(url: nextCall)
+    }
+    
     // MARK: - Protocols
     func starWarsData(value: JSON) {
         getSpecificPerson(data: value)
     }
     
-    // MARK: - TableView
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return personsArray.count
+    func nextValidation(stringValue: String) {
+        DispatchQueue.main.async {
+            if stringValue != "" {
+                self.nextCall = stringValue
+            } else {
+                self.footerButtonView.isHidden = true
+            }
+        }
     }
+     
+    // MARK: - TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return personsArray.count
@@ -73,7 +87,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.performSegue(withIdentifier: "showPersonSegue", sender: indexPath.row)
     }
-        
+    
     // MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 

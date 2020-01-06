@@ -10,4 +10,5 @@ import SwiftyJSON
 
 protocol PastJSONData {
     func starWarsData(value: JSON)
+    func nextValidation(stringValue: String)
 }

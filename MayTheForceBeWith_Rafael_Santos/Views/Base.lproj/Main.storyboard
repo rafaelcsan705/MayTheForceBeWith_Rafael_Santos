@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,6 +63,44 @@
                                 <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" restorationIdentifier="FooterButtonCell" insetsLayoutMarginsFromSafeArea="NO" id="3DR-ar-jrd">
+                                    <rect key="frame" x="0.0" y="156" width="414" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9P-t1-QdZ">
+                                            <rect key="frame" x="20" y="20" width="374" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="CW7-mX-rAE"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="showMore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqr-Zo-vsP"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ven-D9-fvO">
+                                            <rect key="frame" x="20" y="20" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="YMP-W8-jjT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="StarJediSpecialEdition" family="StarJedi Special Edition" pointSize="22"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ven-D9-fvO" firstAttribute="top" secondItem="3DR-ar-jrd" secondAttribute="top" constant="20" symbolic="YES" id="3Yk-Ta-bSf"/>
+                                        <constraint firstAttribute="trailing" secondItem="ven-D9-fvO" secondAttribute="trailing" constant="20" symbolic="YES" id="4Sn-3h-5vw"/>
+                                        <constraint firstItem="ven-D9-fvO" firstAttribute="leading" secondItem="3DR-ar-jrd" secondAttribute="leading" constant="20" symbolic="YES" id="Hyv-7a-cLR"/>
+                                        <constraint firstAttribute="bottom" secondItem="ven-D9-fvO" secondAttribute="bottom" constant="20" symbolic="YES" id="I4p-cs-Qgj"/>
+                                        <constraint firstAttribute="bottom" secondItem="E9P-t1-QdZ" secondAttribute="bottom" constant="20" symbolic="YES" id="SCS-om-zH1"/>
+                                        <constraint firstItem="ven-D9-fvO" firstAttribute="centerX" secondItem="E9P-t1-QdZ" secondAttribute="centerX" id="bcd-2f-vHT"/>
+                                        <constraint firstAttribute="trailing" secondItem="E9P-t1-QdZ" secondAttribute="trailing" constant="20" symbolic="YES" id="bf2-Gr-jf6"/>
+                                        <constraint firstItem="E9P-t1-QdZ" firstAttribute="top" secondItem="3DR-ar-jrd" secondAttribute="top" constant="20" symbolic="YES" id="boo-UO-fvd"/>
+                                        <constraint firstItem="ven-D9-fvO" firstAttribute="centerY" secondItem="E9P-t1-QdZ" secondAttribute="centerY" id="hbX-Ku-iy9"/>
+                                        <constraint firstItem="E9P-t1-QdZ" firstAttribute="leading" secondItem="3DR-ar-jrd" secondAttribute="leading" constant="20" symbolic="YES" id="mmo-km-jS7"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-Ja-duH" customClass="InfoCell" customModule="MayTheForceBeWith_Rafael_Santos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
@@ -125,6 +163,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="footerButtonView" destination="3DR-ar-jrd" id="ox9-04-Lfo"/>
                         <outlet property="tableView" destination="xFW-SY-DYD" id="3jR-44-2Cj"/>
                         <segue destination="1eh-7S-3tT" kind="show" identifier="showPersonSegue" id="9f0-0M-lX4"/>
                     </connections>

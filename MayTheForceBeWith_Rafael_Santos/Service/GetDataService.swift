@@ -12,19 +12,17 @@ import SwiftyJSON
 class GetDataService {
     
     var delegate: PastJSONData?
-    var URL : String = "https://swapi.co/api/"
     let queue = DispatchQueue.init(label: "com.rafaelcsantos.MayTheForceBeWith")
 
-    func getData(type: String)
+    func getData(url: String)
     {
-        let url = "\(URL)\(type)"
-        
         Alamofire.request(url, method: .get, parameters: nil).responseJSON {
            response in
            if response.result.isSuccess {
             self.queue.async {
                 let jsonValues = JSON(response.result.value!)
                 self.delegate?.starWarsData(value: jsonValues)
+                self.delegate?.nextValidation(stringValue: jsonValues["next"].stringValue)
             }
            } else {
              print(response.result.error!)
