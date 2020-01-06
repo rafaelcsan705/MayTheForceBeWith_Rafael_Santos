@@ -100,19 +100,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if segue.identifier == "showPersonSegue" {
-            DispatchQueue.main.async {
-                let positionOfArray = sender as! Int
-                
-                let destVC = segue.destination as! SpecificPersonViewController
-                destVC.name = self.personsArray[positionOfArray].name
-                destVC.heigh = self.personsArray[positionOfArray].height
-                destVC.mass = self.personsArray[positionOfArray].mass
-                destVC.hair = self.personsArray[positionOfArray].hair_color
-                destVC.gender = self.personsArray[positionOfArray].gender
-                destVC.skin = self.personsArray[positionOfArray].skin_color
-                destVC.eye = self.personsArray[positionOfArray].eye_color
-                destVC.birthYear = self.personsArray[positionOfArray].birth_year
-            }
+            let positionOfArray = sender as! Int
+            
+            let destVC = segue.destination as! SpecificPersonViewController
+            destVC.name = self.personsArray[positionOfArray].name
+            destVC.heigh = self.personsArray[positionOfArray].height
+            destVC.mass = self.personsArray[positionOfArray].mass
+            destVC.hair = self.personsArray[positionOfArray].hair_color
+            destVC.gender = self.personsArray[positionOfArray].gender
+            destVC.skin = self.personsArray[positionOfArray].skin_color
+            destVC.eye = self.personsArray[positionOfArray].eye_color
+            destVC.birthYear = self.personsArray[positionOfArray].birth_year
         }
     }
 

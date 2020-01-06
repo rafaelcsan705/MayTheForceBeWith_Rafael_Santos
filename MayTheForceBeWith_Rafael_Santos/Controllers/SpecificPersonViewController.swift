@@ -33,17 +33,14 @@ class SpecificPersonViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 
-        
-        DispatchQueue.main.async {
-            self.nameLabel.text = self.name
-            self.heightLabel.text = self.heigh
-            self.massLabel.text = self.mass
-            self.genderLabel.text = self.gender
-            self.hairColorLabel.text = self.hair
-            self.skinColorLabel.text = self.skin
-            self.eyeColorLabel.text = self.eye
-            self.birthYearLabel.text = self.birthYear
-        }
+        self.nameLabel.text = self.name
+        self.heightLabel.text = self.heigh
+        self.massLabel.text = self.mass
+        self.genderLabel.text = self.gender
+        self.hairColorLabel.text = self.hair
+        self.skinColorLabel.text = self.skin
+        self.eyeColorLabel.text = self.eye
+        self.birthYearLabel.text = self.birthYear
     }
     
     
