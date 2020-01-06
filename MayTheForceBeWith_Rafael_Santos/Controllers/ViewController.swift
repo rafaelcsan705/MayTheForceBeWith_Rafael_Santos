@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
 
+    @IBOutlet weak var tableViewToView: NSLayoutConstraint!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var footerButtonView: UIView!
     let dataModel = GetDataService()
     var personsArray : [Person] = []
@@ -24,6 +26,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchBar.isHidden = true
+        tableViewToView.isActive = true;
         tableView.dataSource = self
         tableView.delegate = self
         dataModel.delegate = self
@@ -53,6 +57,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // MARK: - Button Action
     @IBAction func showMore(_ sender: Any) {
         dataModel.getData(url: nextCall)
+    }
+    @IBAction func showSearchBar(_ sender: Any) {
+        searchBar.isHidden = !searchBar.isHidden
+        tableViewToView.isActive = !tableViewToView.isActive
     }
     
     // MARK: - Protocols
