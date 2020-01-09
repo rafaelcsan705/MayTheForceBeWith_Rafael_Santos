@@ -11,30 +11,46 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PastJSONData {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, PastJSONData {
 
+    // IBOutlet
     @IBOutlet weak var tableView: UITableView!
-
     @IBOutlet weak var tableViewToView: NSLayoutConstraint!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var footerButtonView: UIView!
-    let dataModel = GetDataService()
+    @IBOutlet weak var searchBarButton: UIButton!
+    
+    // Array's
     var personsArray : [Person] = []
-    var specificPerson : [String] = []
+    var filterData : [Person] = []
+    var nameArray : [String] = []
+    
+    let dataModel = GetDataService()
     var nextCall = "https://swapi.co/api/people/?format=json&page=1"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // searchBar
         searchBar.isHidden = true
-        tableViewToView.isActive = true;
+        searchBar.delegate = self
+        searchBar.showsCancelButton = true
+        searchBar.tintColor = .white
+
+        
+        // tableView
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // dataModel
         dataModel.delegate = self
         dataModel.getData(url: nextCall)
     }
 
-    // MARK: - Atribute Person
+    
+    // MARK: - Functions
+    
+    // MARK: Atribute Person
     func getSpecificPerson(data: JSON){
         DispatchQueue.main.async {
             for person in data["results"].arrayValue {
@@ -48,19 +64,71 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     birth_year: person["birth_year"].stringValue,
                     gender: person["gender"].stringValue
                 )
-                self.personsArray.append(info)
+                self.personsArray.append(info)                
                 self.tableView.reloadData()
             }
         }
     }
     
-        // MARK: - Button Action
+    // MARK: Clear Search Bar
+    func clearSearchBar() {
+        searchBar.text = ""
+        searchBar.endEditing(true)
+        filterData = []
+        nameArray = []
+        tableView.reloadData()
+    }
+    
+    // MARK: Clear Search Bar
+    func attributedPerson(destVC: SpecificPersonViewController, personArray: [Person],positionOfArray: Int ) {
+        destVC.name = personArray[positionOfArray].name
+        destVC.heigh = personArray[positionOfArray].height
+        destVC.mass = personArray[positionOfArray].mass
+        destVC.hair = personArray[positionOfArray].hair_color
+        destVC.gender = personArray[positionOfArray].gender
+        destVC.skin = personArray[positionOfArray].skin_color
+        destVC.eye = personArray[positionOfArray].eye_color
+        destVC.birthYear = personArray[positionOfArray].birth_year
+    }
+    
+    // MARK: - Button Action
     @IBAction func showMore(_ sender: Any) {
         dataModel.getData(url: nextCall)
     }
+    
     @IBAction func showSearchBar(_ sender: Any) {
-        searchBar.isHidden = !searchBar.isHidden
-        tableViewToView.isActive = !tableViewToView.isActive
+        self.searchBar.isHidden = !self.searchBar.isHidden
+        
+        if self.searchBar.isHidden {
+            self.tableViewToView.constant = 0
+            clearSearchBar()
+        } else {
+            self.tableViewToView.constant = 56
+            self.searchBar.becomeFirstResponder()
+        }
+    }
+    
+    // MARK: - Search Bar
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterData = []
+        nameArray = []
+        for person in self.personsArray {
+            if person.name.contains(searchBar.text!) {
+                if !nameArray.contains(searchBar.text!) {
+                    filterData.append(person)
+                    nameArray.append(person.name)
+                }
+            }
+        }
+        tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBarButton.sendActions(for: .touchUpInside)
     }
     
     // MARK: - Protocols
@@ -81,18 +149,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return personsArray.count
+        if filterData.count != 0 {
+            return filterData.count
+       } else {
+           return personsArray.count
+       }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! InfoCell
-        cell.nameLabel.text = personsArray[indexPath.row].name
+        
+        if filterData.count != 0 {
+            cell.nameLabel.text = filterData[indexPath.row].name
+        } else {
+            cell.nameLabel.text = personsArray[indexPath.row].name
+        }
 
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         self.performSegue(withIdentifier: "showPersonSegue", sender: indexPath.row)
     }
     
@@ -101,16 +177,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         if segue.identifier == "showPersonSegue" {
             let positionOfArray = sender as! Int
-            
             let destVC = segue.destination as! SpecificPersonViewController
-            destVC.name = self.personsArray[positionOfArray].name
-            destVC.heigh = self.personsArray[positionOfArray].height
-            destVC.mass = self.personsArray[positionOfArray].mass
-            destVC.hair = self.personsArray[positionOfArray].hair_color
-            destVC.gender = self.personsArray[positionOfArray].gender
-            destVC.skin = self.personsArray[positionOfArray].skin_color
-            destVC.eye = self.personsArray[positionOfArray].eye_color
-            destVC.birthYear = self.personsArray[positionOfArray].birth_year
+            
+            if filterData.count != 0 {
+                attributedPerson(destVC: destVC, personArray: filterData, positionOfArray: positionOfArray)
+            } else {
+                attributedPerson(destVC: destVC, personArray: personsArray, positionOfArray: positionOfArray)
+            }
         }
     }
 
