@@ -103,23 +103,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.tableViewToView.constant = 0
             clearSearchBar()
         } else {
-            self.tableViewToView.constant = 56
+            self.tableViewToView.constant = self.searchBar.frame.height
             self.searchBar.becomeFirstResponder()
         }
     }
     
     // MARK: - Search Bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filterData = []
         nameArray = []
+        filterData = []
+        
+        let string = searchBar.text
+        let newString = string?.replacingOccurrences(of: " ", with: "")
         for person in self.personsArray {
-            if person.name.contains(searchBar.text!) {
-                if !nameArray.contains(searchBar.text!) {
+            if person.name.contains(newString!) {
+                if !nameArray.contains(newString!) {
                     filterData.append(person)
                     nameArray.append(person.name)
                 }
             }
         }
+        
         tableView.reloadData()
     }
     
